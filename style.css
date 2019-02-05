@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+        font-family: 'Varela Round', sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+.navbar {
+    height: 50px;
+    margin-top: 20px;   
+    text-align: center
+}
+
+.banner {
+    background-image: url("img/london.jpg");
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 3px 3px 10px black;
+}
+
+.one {
+    margin-bottom: 50px;
+}
+
+.two {
+    margin-bottom: 50px;
+}
+
+.img-wrapper {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    /* flex-wrap: wrap; */
+}
+
+.img {
+    background-image: url("img/london.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 45%;
+    height: 100%;
+    padding: 100px 0;
+    margin-right: 5%;
+    margin-bottom: 10px;
+
+}
+
+.img-text {
+    flex: 50%;
+}
+.goto a {
+    text-decoration: none;
+    color: fuchsia;
+    font-weight: bold; 
+}
+
+@media (min-width: 310px) {
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    /* padding: 0 30px; */
+}
+
+.blog-item {
+    margin-top: 50px;
+}
+
+.one {
+    margin-bottom: 30px;
+}
+
+
+.img-wrapper {
+    flex-direction: column;
+}
+}
+
+@media (min-width: 375px) {
+    
+    .img-wrapper {
+        flex-direction: column;
+}
+
+@media (min-width: 1000px) {
+
+.container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.blog-item {
+    font-size: 14px;
+}
+
+.img-wrapper {
+    flex-direction: row;
+}
+
+}
